@@ -1,0 +1,44 @@
+@charset "utf-8";
+body {
+    width: 90%;
+    max-width: 650px;
+    margin: auto;
+    font-family: 'Tenali Ramakrishna';
+    color:whitesmoke;
+    line-height: 1.5;
+    background:url(../img/Mesa_DeD.jpeg);
+    background-position: top center;
+    text-align: justify;
+}
+/* margin = margem fora do objeto*/
+main{
+    background: #00000051;
+    margin-top: 20px;
+    border-radius: 12px;
+}
+/* padding = margem dentro do objeto*/
+.logo{
+    text-align: center;
+    padding: 20px;
+}
+.paragrafo{
+    text-align: center;
+}
+.sub-title,.title{
+    text-align: center;
+    margin: 0;
+    font-family: 'Montaga';
+    font-size: medium;
+}
+.translator {
+    margin: 30px 0;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .translator table {
+    background: #5e668b91;
+    border-radius: 30px;
+    padding: 20px;
+    margin:  auto;
+  }
