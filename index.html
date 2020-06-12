@@ -2,6 +2,7 @@
 <html lang="pt-br">
   <head>
     <script src="javascript/func.js" lang="javascript"></script>
+    <script src="javascript/enfocus.js" lang="javascript"></script> 
       <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Tenali+Ramakrishna&display=swap"/>
       <link rel="stylesheet" href="css/application.css"/>
     <title>RPG Tradutor</title>
@@ -21,25 +22,25 @@
               interação entre os povos destes mundos.</p>
               <hr>
               <div class="translator">
-                <h2>Sua tradução  </h2>          
-                <table>
-                  <td><select>
-                    <datalist>
-                      <option>Português</option>
-                    </datalist>
-                  </select></td>
-                   <td> <input type='text'size= 30px>
-                   <input type='text'size= 30px></td>
-                   <td><select>
-                    <datalist>
-                      <option>Português</option>
-                      <option>Anoico</option>
-                      <option>Dracônico</option>
-                      <option>Elfico</option>
-                    </datalist>
-                  </select></td>
-                </table>
-                
+                <h2>Sua tradução  </h2>
+                  <!--seleção de idiomas da tradução-->     
+                <td><select>
+                  <datalist class="optionstdr">
+                    <option>Português</option>
+                    <option>Anoico</option>
+                    <option>Dracônico</option>
+                    <option>Elfico</option>
+                  </datalist>
+                </select></td>
+                <table  >
+                   <td>
+                  <form name="nTabTraduc" id="iTabTraduc">
+  <!--texto recebido:-->     <textarea class="textEnt" type='text' name="nTextEnt" id="iTextEnt" cols="30" rows="6" placeholder="Seu Texto"></textarea>
+  <!--texto transformado:--> <textarea class="textsai" type='text' name="nTextsai" id="iTextsai" cols="30" rows="6" placeholder="Sua tradução"></textarea>                               
+                  </form>
+                   </td>
+                   <INPUT TYPE="BUTTON" VALUE="traduzir" onClick="passatxt()">
+                </table>                
               </div>
     </main> 
     <footer> Desenvolvido por Victor Macabu </footer>         
