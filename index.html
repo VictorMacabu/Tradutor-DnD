@@ -2,10 +2,18 @@
 <html lang="pt-br">
   <head>
     <script src="javascript/func.js" lang="javascript"></script>
-    <script src="javascript/enfocus.js" lang="javascript"></script> 
+    <style>
+      @font-face { font-family: DavekFontAnoes; src: url("fontes/davek-font anões/Davek-vGXA.ttf") format('truetype'); } 
+.DavekFontAnoes { font-family: DavekFontAnoes; font-size: 4.2em; }
+      @font-face { font-family: IokharicDraconic; src: url("fontes/iokharic-font Draconic/Iokharic-dqvK.ttf") format('truetype'); } 
+.IokharicDraconic { font-family: IokharicDraconic; font-size: 4.2em; }
+      @font-face { font-family: RelanicFontElfica; src: url("fontes/rellanic-font elfica/Rellanic-Agx7.ttf") format('truetype'); } 
+.RelanicFontElfica { font-family: RelanicFontElfica; font-size: 4.2em; }
+    </style>
+  
       <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Tenali+Ramakrishna&display=swap"/>
       <link rel="stylesheet" href="css/application.css"/>
-    <title>RPG Tradutor</title>
+      <title>RPG Tradutor</title>
     <meta charset="utf-8">
   </head>
   <body>
@@ -24,12 +32,12 @@
               <div class="translator">
                 <h2>Sua tradução  </h2>
                   <!--seleção de idiomas da tradução-->     
-                <td><select>
-                  <datalist class="optionstdr">
-                    <option>Português</option>
-                    <option>Anoico</option>
-                    <option>Dracônico</option>
-                    <option>Elfico</option>
+                <td><select selectfont()>
+                  <datalist class="optionstdr" name="nList" id="iList" >
+                    <option name="n01" id="i01" value="Comum" var=font1> Comum </option>
+                    <option name="n02" id="i02" value="Anoico" var=font2> Anoico </option>
+                    <option name="n03" id="i03" value="Dracônico" var=font3> Dracônico </option>
+                    <option name="n04" id="i04" value="Elfico" var=font4> Elfico </option>
                   </datalist>
                 </select></td>
                 <table  >
@@ -39,7 +47,7 @@
   <!--texto transformado:--> <textarea class="textsai" type='text' name="nTextsai" id="iTextsai" cols="30" rows="6" placeholder="Sua tradução"></textarea>                               
                   </form>
                    </td>
-                   <INPUT TYPE="BUTTON" VALUE="traduzir" onClick="passatxt()">
+                   <INPUT TYPE="BUTTON" VALUE="Traduzir" onClick="passatxt();selectfont()">
                 </table>                
               </div>
     </main> 
