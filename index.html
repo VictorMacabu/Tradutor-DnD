@@ -3,12 +3,12 @@
   <head>
     <script src="javascript/func.js" lang="javascript"></script>
     <style>
-      @font-face { font-family: DavekFontAnoes; src: url("fontes/davek-font anões/Davek-vGXA.ttf") format('truetype'); } 
-.DavekFontAnoes { font-family: DavekFontAnoes; font-size: 4.2em; }
-      @font-face { font-family: IokharicDraconic; src: url("fontes/iokharic-font Draconic/Iokharic-dqvK.ttf") format('truetype'); } 
-.IokharicDraconic { font-family: IokharicDraconic; font-size: 4.2em; }
-      @font-face { font-family: RelanicFontElfica; src: url("fontes/rellanic-font elfica/Rellanic-Agx7.ttf") format('truetype'); } 
-.RelanicFontElfica { font-family: RelanicFontElfica; font-size: 4.2em; }
+      @font-face { font-family: DavekFontAnoes; src: url("fontes/webfontkit-20200624-234507/davek-vgxa-webfont.woff"); } 
+.DavekFontAnoes { font-family: DavekFontAnoes; font-size: 5.2em; }
+      @font-face { font-family: IokharicDraconic; src: url("fontes/webfontkit-20200624-234507/iokharic-dqvk-webfont.woff"); } 
+.IokharicDraconic { font-family: IokharicDraconic; font-size: 5.2em; }
+      @font-face { font-family: RelanicFontElfica; src: url("fontes/webfontkit-20200624-234507/rellanic-agx7-webfont.woff"); } 
+.RelanicFontElfica { font-family: RelanicFontElfica; font-size: 5.2em; }
     </style>
   
       <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Tenali+Ramakrishna&display=swap"/>
@@ -30,25 +30,20 @@
               interação entre os povos destes mundos.</p>
               <hr>
               <div class="translator">
-                <h2>Sua tradução  </h2>
-                  <!--seleção de idiomas da tradução-->     
-                <td><select selectfont()>
-                  <datalist class="optionstdr" name="nList" id="iList" >
-                    <option name="n01" id="i01" value="Comum" var=font1> Comum </option>
-                    <option name="n02" id="i02" value="Anoico" var=font2> Anoico </option>
-                    <option name="n03" id="i03" value="Dracônico" var=font3> Dracônico </option>
-                    <option name="n04" id="i04" value="Elfico" var=font4> Elfico </option>
-                  </datalist>
-                </select></td>
+                <h2>Sua tradução  </h2>              
                 <table  >
                    <td>
                   <form name="nTabTraduc" id="iTabTraduc">
   <!--texto recebido:-->     <textarea class="textEnt" type='text' name="nTextEnt" id="iTextEnt" cols="30" rows="6" placeholder="Seu Texto"></textarea>
-  <!--texto transformado:--> <textarea class="textsai" type='text' name="nTextsai" id="iTextsai" cols="30" rows="6" placeholder="Sua tradução"></textarea>                               
+  <!--texto transformado:--> <textarea class="textsai" type='text' name="nTextsai" id="iTextsai" cols="30" rows="6" placeholder="Sua tradução" ></textarea>                               
                   </form>
                    </td>
-                   <INPUT TYPE="BUTTON" VALUE="Traduzir" onClick="passatxt();selectfont()">
+                   <input TYPE="BUTTON" VALUE="Comum" onClick="selectfont1();passatxt()"/>
+                   <input TYPE="BUTTON" VALUE="Anoico" onClick="selectfont2();passatxt()"/>
+                   <input TYPE="BUTTON" VALUE="Dracônico" onClick="selectfont3();passatxt()"/>
+                   <input TYPE="BUTTON" VALUE="Élfico" onClick="selectfont4();passatxt()"/>
                 </table>                
+              <p class="obs" >obs: Os textos não aceitam acentuação e/ou caracteres especiais. </p>
               </div>
     </main> 
     <footer> Desenvolvido por Victor Macabu </footer>         

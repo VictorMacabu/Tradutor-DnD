@@ -1,10 +1,5 @@
 @charset "utf-8";
-@font-face { font-family: DavekFontAnoes; src: url("fontes/davek-font anões/Davek-vGXA.ttf") format('truetype'); } 
-.DavekFontAnoes { font-family: DavekFontAnoes; font-size: 4.2em; }
-@font-face { font-family: IokharicDraconic; src: url("fontes/iokharic-font Draconic/Iokharic-dqvK.ttf") format('truetype'); } 
-.IokharicDraconic { font-family: IokharicDraconic; font-size: 4.2em; }
-@font-face { font-family: RelanicFontElfica; src: url("fontes/rellanic-font elfica/Rellanic-Agx7.ttf") format('truetype'); } 
-.RelanicFontElfica { font-family: RelanicFontElfica; font-size: 4.2em; }
+
 body {
     width: 90%;
     max-width: 650px;
@@ -47,15 +42,19 @@ main{
     font-size: 20px;
 }
 .translator {
+    font-size: 25px;
     margin: 30px 0;
     text-align: center;
     width: 100%;
   }
   
-  .translator table {
+.translator table {
     background: #2d334e91;
     border-radius: 30px;
     padding: 20px;
     margin:  auto;
   }
- 
+.obs {
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+}  
