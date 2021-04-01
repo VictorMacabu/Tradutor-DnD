@@ -23,27 +23,36 @@
         
       </div>
       <h1 class="title">Dragão Tradutor</h1>
-      <h2 class="sub-title">TRADUZA AS DIVERSAS LINGUAS DE D&D E OUTROS RPGs </h2>
+      <h2 class="sub-title">TRADUZA  AS  DIVERSAS  LINGUAGENS  DE  <strong> D&D</strong> </h2>
       <p class="paragrafo">Nos diversos mundos fictícios que conhecemos exitem muitos tipos de linguagens,
              e em muitos destes mundos podemos interagir com seres que não falam o nosso idioma,
               portanto o objetivo deste site é decodificar algumas linguagens para ajudar na 
               interação entre os povos destes mundos.</p>
               <hr>
               <div class="translator">
-                <h2>Sua tradução  </h2>              
-                <table  >
-                   <td>
-                  <form name="nTabTraduc" id="iTabTraduc">
-  <!--texto recebido:-->     <textarea class="textEnt" type='text' name="nTextEnt" id="iTextEnt" cols="30" rows="6" placeholder="Seu Texto"></textarea>
-  <!--texto transformado:--> <textarea class="textsai" type='text' name="nTextsai" id="iTextsai" cols="30" rows="6" placeholder="Sua tradução" ></textarea>                               
-                  </form>
-                   </td>
-                   <input TYPE="BUTTON" VALUE="Comum" onClick="selectfont1();passatxt()"/>
-                   <input TYPE="BUTTON" VALUE="Anoico" onClick="selectfont2();passatxt()"/>
-                   <input TYPE="BUTTON" VALUE="Dracônico" onClick="selectfont3();passatxt()"/>
-                   <input TYPE="BUTTON" VALUE="Élfico" onClick="selectfont4();passatxt()"/>
-                </table>                
-              <p class="obs" >obs: Os textos não aceitam acentuação e/ou caracteres especiais. </p>
+                <h2>Sua tradução  </h2>      
+                <table >
+                  <tr>
+                    <td><input class="botaotrt" type="button" value="Comum" onClick="selectfont1();passatxt()"/></td>
+                    <td><input class="botaotrt" type="button" value="Anoico" onClick="selectfont2();passatxt()"/></td>
+                    <td><input class="botaotrt" type="button" value="Dracônico" onClick="selectfont3();passatxt()"/></td>
+                    <td><input class="botaotrt" type="button" value="Élfico" onClick="selectfont4();passatxt()"/></td>
+                  </tr>
+                
+                  <tr> 
+                    <form name="nTabTraduc" id="iTabTraduc">
+                    <td colspan="2">                  
+  <!--texto recebido:-->     <textarea class="textoTransf" type='text' name="nTextEnt" id="iTextEnt" cols="30" rows="6" placeholder="Seu Texto" ></textarea>
+                    </td>
+                    <td colspan="2">
+  <!--texto transformado:--> <textarea class="textoTransf" type='text' name="nTextsai" id="iTextsai" cols="30" rows="6" placeholder="Sua tradução" ></textarea>                               
+                    </td>
+                    </form>
+                  </tr>
+                </table>
+
+                                
+              <p class="obsText" >obs: Os textos não aceitam acentuação e/ou caracteres especiais. </p>
               </div>
     </main> 
     <footer> Desenvolvido por Victor Macabu </footer>         
