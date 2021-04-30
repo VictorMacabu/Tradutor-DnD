@@ -23,7 +23,7 @@ main{
     padding: 20px;
 }
 .title{
-    padding-top: 25px; 
+    padding-top: 0px; 
     text-align: center;
     margin: 0;
     font-family: 'Montaga';
@@ -41,12 +41,18 @@ main{
     text-align: center;
     font-size: 20px;
 }
+hr{
+    margin: 0px;
+}
 .translator {
     font-size: 25px;
     margin: 30px 0;
     text-align: center;
     width: 100%;
   }
+.translator h2{
+    margin: 0px;
+}
   
 .translator table {
     background: #2d334e91;
@@ -54,18 +60,20 @@ main{
     padding: 20px;
     margin:  auto;
   }
-.obsText {
-    font-size: 12px;
-    font-family: Arial, Helvetica, sans-serif;
-}  
+
 textarea {
     width: 200px;
     right: 150px;
     resize: none;
     font-size: 22px;
+    height: 200px;
   }
 .botaotrt{
     border-radius: 10px;
     padding: 10px;
     margin: 5px;
 }
+.obsText {  /* footer */
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+}  
